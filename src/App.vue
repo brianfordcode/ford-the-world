@@ -2,22 +2,19 @@
 
   <body>
 
+    <navbar></navbar>
+     <router-view/>
     
-
-      <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </div>
+    <div class="content-pages">
+      <mapsection></mapsection>
+      <aboutsection></aboutsection>
+      <gearsection></gearsection>
+      <latestcontentsection></latestcontentsection>
+    </div>
     
-      <router-view/>
-    
-    
-    
+    <sitefooter></sitefooter>
   </body>
 
-
-
-  
 </template>
 
 <style>
@@ -39,16 +36,36 @@ body {
   background-color: rgb(42, 88, 134);
 }
 
-#nav {
-  padding: 30px;
+.content-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+/* .content-pages:first-child {
+  padding-top: 10px;
+} */
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
+
+<script>
+import navbar from './components/navbar.vue'
+import gearsection from './components/gear-section.vue'
+import latestcontentsection from './components/latest-content-section.vue'
+import aboutsection from './components/about-me-section.vue'
+import mapsection from './components/map-section.vue'
+import sitefooter from './components/footer.vue'
+
+export default {
+  
+  components: {
+    navbar,
+    mapsection,
+    gearsection,
+    latestcontentsection,
+    aboutsection,
+    sitefooter
+  }
+}
+</script>
