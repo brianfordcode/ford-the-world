@@ -4,7 +4,7 @@
        <div class="content">
 
            
-          <img src="/src/assets/main-logo.png" alt="logo">
+          <img src="../assets/logo.png" alt="logo">
 
           <div class="links">
             <router-link to="/">Home</router-link>
@@ -29,12 +29,18 @@ export default {
 
 #nav {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 50px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+img {
+    height: 60px;
+    width: auto;
 }
 
 .content {
