@@ -2,7 +2,7 @@
 
 <div class="banner">
     <div class="content">
-        <worldmap width="60%" height="100%"></worldmap>
+        <worldmap width="600px" height="100%"></worldmap>
         <h1>map section</h1> 
     </div>
 </div>
@@ -20,11 +20,10 @@ import worldmap from './world-map'
 
 export default {
 
-components: {
-    worldmap
-}
+    components: {
+        worldmap
+    }
 
-   
 }
 </script>
 
@@ -40,8 +39,10 @@ components: {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    width: 80%;
     max-width: 1000px;
     min-width: 700px;
+    /* border: 1px solid blue; */
 }
 
 </style>

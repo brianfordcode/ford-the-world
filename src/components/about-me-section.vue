@@ -51,6 +51,7 @@ export default {
     width: 80%;
     max-width: 1000px;
     min-width: 700px;
+    /* border: 1px solid blue; */
 }
 
 .head-shot {
