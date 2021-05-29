@@ -1,7 +1,7 @@
 <template>
 
    <footer>
-       <h1>&copy;2021 Ford the World</h1>
+       <p>&copy;2021 Ford the World</p>
     </footer>
     
 </template>
@@ -22,6 +22,6 @@ footer {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   font-size: 8px;
+   font-size: 15px;
 }
 </style>

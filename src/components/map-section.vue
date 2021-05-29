@@ -1,17 +1,13 @@
 <template>
 
-<div class="banner">
-    <div class="content">
-        <worldmap width="600px" height="100%"></worldmap>
-        <h1>map section</h1> 
+    <div class="banner">
+        <div class="content">
+            <worldmap width="600px" height="100%"></worldmap>
+            <h1>Where I've Been</h1> 
+        </div>
     </div>
-</div>
 
-
-
-  
 </template>
-
 
 <script>
 
@@ -31,7 +27,7 @@ export default {
 
 .banner {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .content {
@@ -44,5 +40,6 @@ export default {
     min-width: 700px;
     /* border: 1px solid blue; */
 }
+
 
 </style>

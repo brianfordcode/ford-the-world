@@ -4,7 +4,7 @@
        <div class="content">
 
            
-          <img src="../assets/logo.png" alt="logo">
+          <img class="logo" src="../assets/logo.png" alt="logo">
 
           <div class="links">
             <router-link to="/">Home</router-link>
@@ -28,17 +28,17 @@ export default {
 
 
 #nav {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(252, 252, 252);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.15);
-  overflow: hidden;
 }
 
-img {
+.logo {
     height: 60px;
     width: auto;
 }
@@ -57,10 +57,10 @@ img {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin: 10px;
+  margin-left: 30px;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: rgb(42, 88, 134);
 }
 </style>
