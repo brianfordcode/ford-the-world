@@ -43,9 +43,9 @@ body {
   /* justify-content: space-around; */
 }
 
-/* .content-pages:first-child {
-  padding-top: 10px;
-} */
+.content-pages > div:first-child {
+  margin-top: 50px;
+}
 
 </style>
 

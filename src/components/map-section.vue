@@ -1,9 +1,13 @@
 <template>
 
-<div class="container">
-   <!-- <h1>map section</h1> -->
-   <worldmap width="auto" height="100%"></worldmap>
+<div class="banner">
+    <div class="container">
+        <worldmap width="60%" height="100%"></worldmap>
+        <h1>map section</h1> 
+    </div>
 </div>
+
+
 
   
 </template>
@@ -26,11 +30,26 @@ components: {
 
 <style scoped>
 
+.banner {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 375px;
+}
+
 .container {
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 50px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* margin-top: 50px; */
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.content {
+    width: calc();
 }
 
 </style>

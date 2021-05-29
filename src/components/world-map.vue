@@ -1,6 +1,6 @@
 <template>
   
-<svg viewBox="30.767 241.591 784.077 458.627" :style="countryStyles.world-map">
+<svg viewBox="30.767 241.591 750 485" :style="countryStyles.world-map">
 <title>Simple World Map</title>
 <desc>
     Author: Al MacDonald
@@ -423,13 +423,13 @@ const countryCodes = [
 // "bj",//Benin
 // "bn",//Brunei
 // "bo",//Bolivia
-// "br",//Brazil
+"br",//Brazil
 // "bs",//Bahamas
 // "bt",//Bhutan
 // "bw",//Botswana
 // "by",//Belarus
 // "bz",//Belize
-// "ca",//Canada
+"ca",//Canada
 // "cd",//Democratic Republic of the Congo
 // "cf",//Central African Republic
 // "cg",//Congo
@@ -437,7 +437,7 @@ const countryCodes = [
 // "ci",//Cote d'Ivoire
 // "cl",//Chile
 // "cm",//Cameroon
-// "cn",//China
+"cn",//China
 // "co",//Colombia
 // "cr",//Costa Rica
 // "cu",//Cuba
@@ -456,11 +456,11 @@ const countryCodes = [
 // "es",//Spain
 // "et",//Ethiopia
 // "fi",//Finland
-// "fj",//Fiji
+"fj",//Fiji
 // "fk",//Falkland Islands
 // "fr",//France
 // "ga",//Gabon
-// "gb",//United Kingdom
+"gb",//United Kingdom
 // "ge",//Georgia
 // "gh",//Ghana
 // "gl",//Greenland
@@ -468,32 +468,32 @@ const countryCodes = [
 // "gn",//Guinea
 // "gq",//Equatorial Guinea
 // "gr",//Greece
-// "gt",//Guatemala
+"gt",//Guatemala
 // "gw",//Guinea-Bissau
 // "gy",//Guyana
 // "hn",//Honduras
 // "hr",//Croatia
 // "ht",//Haiti
 // "hu",//Hungary
-// "id",//Indonesia
-// "ie",//Ireland
+"id",//Indonesia
+"ie",//Ireland
 // "il",//Israel
-// "in",//India
+"in",//India
 // "iq",//Iraq
 // "ir",//Iran
-// "is",//Iceland
+"is",//Iceland
 // "it",//Italy
-// "jm",//Jamaica
+"jm",//Jamaica
 // "jo",//Jordan
 // "jp",//Japan
 // "ke",//Kenya
 // "kg",//Kyrgyzstan
-// "kh",//Cambodia
+"kh",//Cambodia
 // "kp",//North Korea
 // "kr",//South Korea
 // "kw",//Kuwait
 // "kz",//Kazakhstan
-// "la",//Laos
+"la",//Laos
 // "lb",//Lebanon
 // "lk",//Sri Lanka
 // "lr",//Liberia
@@ -512,22 +512,22 @@ const countryCodes = [
 // "mn",//Mongolia
 // "mr",//Mauritania
 // "mw",//Malawi
-// "mx",//Mexico
-// "my",//Malaysia
+"mx",//Mexico
+"my",//Malaysia
 // "mz",//Mozambique
 // "na",//Namibia
-// "nc",//New Caledonia
+"nc",//New Caledonia
 // "ne",//Niger
 // "ng",//Nigeria
 // "ni",//Nicaragua
 // "nl",//Netherlands
 // "no",//Norway
 // "np",//Nepal
-// "nz",//New Zealand
+"nz",//New Zealand
 // "om",//Oman
-// "pa",//Panama
-// "pe",//Peru
-// "pg",//Papua New Guinea
+"pa",//Panama
+"pe",//Peru
+"pg",//Papua New Guinea
 // "ph",//Philippines
 // "pk",//Pakistan
 // "pl",//Poland
@@ -541,10 +541,10 @@ const countryCodes = [
 // "ru",//Russia
 // "rw",//Rwanda
 // "sa",//Saudi Arabia
-// "sb",//Solomon Islands
+"sb",//Solomon Islands
 // "sd",//Sudan
 // "se",//Sweden
-// "sg",//Singapore
+"sg",//Singapore
 // "si",//Slovenia
 // "sk",//Slovakia
 // "sl",//Sierra Leone
@@ -558,7 +558,7 @@ const countryCodes = [
 // "td",//Chad
 // "tf",//Fr. S. Antarctic Lands
 // "tg",//Togo
-// "th",//Thailand
+"th",//Thailand
 // "tj",//Tajikistan
 // "tl",//Timor-Leste
 // "tm",//Turkmenistan
@@ -569,29 +569,34 @@ const countryCodes = [
 // "tz",//Tanzania
 // "ua",//Ukraine
 // "ug",//Uganda
-// "us",//United States
+"us",//United States
 // "uy",//Uruguay
 // "uz",//Uzbekistan
 // "ve",//Venezuela
-// "vn",//Vietnam
-// "vu",//Vanuatu
+"vn",//Vietnam
+"vu",//Vanuatu
 // "ye",//Yemen
 // "za",//South Africa
 // "zm",//Zambia
 // "zw",//Zimbabwe
+"french polynesia",
+"cook islands",
 ]
+
+console.log(countryCodes.length)
+
 export default {
   computed: {
       countryStyles() {
           const styles = {}
         countryCodes.forEach(code => {
-              
-        styles[code] = { fill: 'blue' }
-    
-          })
-          return styles
-      }
-  }
+            styles[code] = {
+                fill: 'blue',
+            }
+        })
+            return styles
+        }
+    }
 }
 </script>
 
