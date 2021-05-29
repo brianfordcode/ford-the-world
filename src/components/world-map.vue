@@ -1,6 +1,6 @@
 <template>
   
-<svg viewBox="30.767 241.591 750 485" :style="countryStyles.world-map">
+<svg viewBox="20 240 800 465" :style="countryStyles.world-map">
 <title>Simple World Map</title>
 <desc>
     Author: Al MacDonald
@@ -601,4 +601,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
