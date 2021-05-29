@@ -32,7 +32,6 @@
 
 <script>
 export default {
-
 }
 </script>
 
@@ -69,6 +68,5 @@ export default {
 h1 {
     padding-bottom: 10px;
 }
-
 
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="countries">
+    <h1>This is a countries page</h1>
   </div>
 </template>
 
 
 <style scoped>
-.about {
+.countries {
   height: 100vh;
   color: white;
 }

@@ -3,12 +3,15 @@
 
        <div class="content">
 
-           
+        <router-link to="/">
           <img class="logo" src="../assets/logo.png" alt="logo">
+        </router-link>
+          
 
           <div class="links">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link> 
+            <router-link to="/">Home</router-link> 
+            <router-link to="/countries">Countries</router-link> 
+            <router-link to="/contact">Contact</router-link> 
           </div>
             
        </div>
@@ -49,12 +52,9 @@ export default {
     align-items: center;
     width: 80%;
     max-width: 1000px;
-
-
 }
 
 #nav a {
-  font-weight: bold;
   color: black;
   text-decoration: none;
   margin-left: 30px;
